@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rose with HTML</title>
+  <style>
+    .rose {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      border-radius: 50%;
+      background-color: #F08080; /* Light red */
+    }
+    
+    .petal {
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      background-color: #F08080;
+      border-radius: 0 50% 50% 0;
+      transform-origin: 50% 100%; 
+    }
+
+    .petal:nth-child(1) {
+      transform: rotate(30deg) translate(0, -20px);
+    }
+
+    .petal:nth-child(2) {
+    transform: rotate(60deg) translate(0, -20px);
+    }
+    
+    .petal:nth-child(3) {
+    transform: rotate(90deg) translate(0, -20px);
+    }
+
+    .petal:nth-child(4) {
+    transform: rotate(120deg) translate(0, -20px);
+    }
+
+    .petal:nth-child(5) {
+    transform: rotate(150deg) translate(0, -20px);
+    }
+
+    .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+      background-color: #FF0000; /* Dark red */
+    border-radius: 50%;
+    }
+</style>
+</head>
+<body>
+<div class="rose">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+  </div>
+</body>
+</html>
